@@ -1,0 +1,49 @@
+{% load compress %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาหารพื้นเมือง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asana+New:wght@400;500&family=Charm:wght@400;500&family=Mitr:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header component -->
+<!-- Header component -->
+<header class="bg-orange-800 text-white p-4 flex justify-between items-center font-sarabun">
+    <div class="flex items-center space-x-4">
+        <!-- Shop Icon (Replace with your own image) -->
+        <div class="flex items-center space-x-1 hover:text-gray-400 cursor-pointer">
+            <!-- Replace src with the path to your image -->
+            <img src="{% static 'image/foodlogo.png' %}" alt="Shop" class="h-6 w-6 object-contain">
+        </div>
+        <!-- Home Icon -->
+        <div class="flex items-center space-x-1 hover:text-gray-400 cursor-pointer">
+            <span><a href="/">หน้าแรก</a></span>
+        </div>
+        <!-- Food Knowledge Icon -->
+        <div class="flex items-center space-x-1 hover:text-gray-400 cursor-pointer">
+            <span><a href="#">ความรู้เกี่ยวกับอาหาร</a></span>
+        </div>
+        <!-- About Us Icon -->
+        <div class="flex items-center space-x-1 hover:text-gray-400 cursor-pointer">
+            <span><a href="/profile/">ผู้จัดทำ</a></span>
+        </div>
+    </div>
+</header>
+    <div class="text-center mb-8">
+        <h4 class="text-3xl font-bold text-gray-800 font-prompt"><u>อาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพตามวิถีภูมิปัญญาท้องถิ่นของจังหวัดอุบลราชธานี</u></h4>
+    </div>
+
+    {%block content%}
+
+    {%endblock%}
+</body>
+
+</html>

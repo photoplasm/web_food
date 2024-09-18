@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}
+food1
+{% endblock %}
+{% block content %}
+<!-- แบรนเนอร์ -->
+<div class="flex justify-center items-center min-h-screen p-6">
+    <!-- ช่องสำหรับโปรไฟล์ -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 w-full max-w-md flex flex-col items-center border border-black">
+        <!-- รูปโปรไฟล์ -->
+        <img class="w-32 h-32 object-cover mx-auto mt-4 border-4 " src="{% static 'image/profile.jpg' %}" alt="เมี่ยงคำกลีบบัวหลวง">
+        <div class="p-6 text-center">
+            <!-- ชื่อผู้ใช้ -->
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 font-mitr">นาย ภัทรพล เภาวะริต</h2>
+            <!-- คำอธิบาย -->
+            <p class="text-gray-600 mb-4 font-sarabun">
+                ผมมีทักษะในการพัฒนาเว็บแอปพลิเคชันด้วย Django, HTML, และ Python
+                โดยเชี่ยวชาญในการสร้างระบบหลังบ้านที่มีประสิทธิภาพและปลอดภัยด้วย Django ขณะเดียวกัน HTML
+                ช่วยให้สามารถออกแบบและพัฒนาอินเทอร์เฟซที่ใช้งานง่ายและสวยงามได้ การใช้ Python
+                ช่วยให้สามารถแก้ปัญหาที่ซับซ้อนได้อย่างมีประสิทธิภาพและเขียนโค้ดที่มีคุณภาพ
+                ทำให้ผมสามารถพัฒนาซอฟต์แวร์ที่ดีและคงทนได้
+            </p>
+            <!-- ไอคอน -->
+            <div class="flex justify-center gap-4 mt-4">
+                <img class="w-16 h-16" src="{% static 'image/icon/html.png' %}" alt="HTML">
+                <img class="w-16 h-16" src="{% static 'image/icon/python.png' %}" alt="Python">
+                <img class="w-16 h-16" src="{% static 'image/icon/django.png' %}" alt="Django">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

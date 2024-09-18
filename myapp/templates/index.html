@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block content %}
+<main class="bg-gray-100 min-h-screen py-8 px-4">
+    <!-- Section Title -->
+    <!-- Food List -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- เมี่ยงคำกลีบบัวหลวง -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+            <img class="w-48 h-48 object-cover rounded-full mx-auto mt-4" src="{% static 'image/food1/photo_cart_1.jpg' %}"
+                alt="เมี่ยงคำกลีบบัวหลวง">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 font-mitr">เมี่ยงคำกลีบบัวหลวงแบบโบราณ</h2>
+                <p class="text-gray-600 mb-4 font-sarabun">อาหารพื้นเมืองจากดอกบัว...</p>
+                <button class="text-blue-500 hover:text-blue-700 font-semibold font-sarabun"><a href="/food1/">เรียนรู้เพิ่มเติม</a></button>
+            </div>
+        </div>
+        <!-- ปลาส้มทรงเครื่อง -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+            <img class="w-48 h-48 object-cover rounded-full mx-auto mt-4" src="{% static 'image/food2/card-02.jpg' %}"
+                alt="ปลาส้มทรงเครื่อง">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 font-mitr">ปลาส้มทรงเครื่องสมุนไพร</h2>
+                <p class="text-gray-600 mb-4 font-sarabun">ปลาส้มหมักสมุนไพรจากภูมิปัญญาท้องถิ่น...</p>
+                <button class="text-blue-500 hover:text-blue-700 font-semibold font-sarabun"><a href="/food2/">เรียนรู้เพิ่มเติม</a></button>
+            </div>
+        </div>
+
+        <!-- หมี่กะทิ -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+            <img class="w-48 h-48 object-cover rounded-full mx-auto mt-4" src="{% static 'image/food3/card-03.jpg' %}" alt="หมี่กะทิ">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 font-mitr">หมี่กะทิ</h2>
+                <p class="text-gray-600 mb-4 font-sarabun">หมี่กะทิรสชาติกลมกล่อม...</p>
+                <button class="text-blue-500 hover:text-blue-700 font-semibold font-sarabun"><a href="/food3/">เรียนรู้เพิ่มเติม</a></button>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock%}
